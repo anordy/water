@@ -1,9 +1,7 @@
 
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:water/widget/drawer_widget.dart';
 
 class CategoryDetails extends StatefulWidget {
   @override
@@ -45,11 +43,11 @@ class _CategoryDetailsState extends State<CategoryDetails> {
               dotColor: Colors.black.withOpacity(0.3),
               animationDuration: Duration(milliseconds: 800),
               images: [
-                AssetImage('assets/images/pipe5.webp'),
-                AssetImage('assets/images/pipe2.webp'),
-                AssetImage('assets/images/pipe3.jpg'),
+                AssetImage('assets/images/j1.jpg'),
+                AssetImage('assets/images/j2.jpg'),
+                AssetImage('assets/images/j3.jpg'),
                 AssetImage('assets/images/pipe4.jpg'),
-                AssetImage('assets/images/pie1.jpg'),
+                AssetImage('assets/images/pipe5.webp'),
               ],
             ),
       ),

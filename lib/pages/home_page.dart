@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:water/pages/cartegory_details.dart';
+import 'package:water/pages/search_plumber.dart';
 import 'package:water/widget/drawer_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,7 +21,15 @@ class HomePage extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right : 20.0),
-            child: Icon(FontAwesomeIcons.cogs
+            child: InkWell(
+              onTap: () {
+                   Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => SearchPage()));
+                       
+                             
+              },
+                          child: Icon(FontAwesomeIcons.user
+              ),
             ),
           )
         ],
@@ -65,7 +74,7 @@ class HomePage extends StatelessWidget {
                     backgroundColor: Colors.lightBlue,
                     radius: 35,
                     child: Text('S',style: TextStyle(fontSize: 30,color: Colors.white),)),
-              title: Text('Sources Fesh Water',
+              title: Text('Sources Fresh Water',
                     style: GoogleFonts.ubuntu(
                       color: Colors.white,
                       fontSize: 18,
